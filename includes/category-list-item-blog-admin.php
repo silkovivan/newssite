@@ -1,0 +1,35 @@
+<?php require("$_SERVER[DOCUMENT_ROOT]/includes/pagination.php"); ?>
+
+
+<?php foreach ($data as $results): ?>
+
+
+<a class="btnflat large flat-default" style="text-decoration: none; color: white;" href="admin/edit.php?action=edit&id=<?php echo $results["id"] ?>" role="button">Редактировать</a>
+
+<a class="btnflat large flat-danger" style="text-decoration: none; color: white;"   href="admin/delete.php?id=<?php echo $results["id"] ?>" role="button">Удалить статью </a>
+
+
+
+
+
+<a href="page.php?id=<?php echo $results["id"] ?>" class="cat-list-item">
+<div class="row">
+        <div class="col-sm-6">
+            <div class="pattern">
+                <img src="<?php echo $results["thumbnail"] ?>" alt="<?php echo $results["title"] ?>" class="img-responsive img-width overlay">
+            </div>
+        </div>
+        <div class="col-sm-6">
+            <h3><?php echo $results["title"] ?></h3>
+            <div class="date"><?php echo date("d/m/Y", strtotime($results["date"])); ?></div>
+            <p><?php echo $string = mb_substr($results["text"], 0, 500); ?>...</p>
+            
+        </div>
+
+    
+</div>
+</a>
+
+ 
+
+<?php endforeach; ?>
