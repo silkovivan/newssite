@@ -17,6 +17,7 @@
 
 - #### ICON Libraries
     - [FONTAWESOME](https://fontawesome.com/)
+    - likely (пока что выключен, нужен для репоста статей)
 
 ## Установка сайта на Open Server 5.4.0
 1. Используем **PHP 8.0** или выше, также используем **MariaDB-10.5 (PhpMyAdmin)**
