@@ -15,6 +15,7 @@
 - #### Back End langusges
     - PHP
     - MySQL
+    - AngularJS
 
 - #### ICON Libraries
     - [FONTAWESOME](https://fontawesome.com/)
